@@ -22,10 +22,8 @@ class TeamMatches extends Component {
     const {params} = match
     const {id} = params
     const url = `https://apis.ccbp.in/ipl/${id}`
-    console.log(url)
     const response = await fetch(url)
     const teamMatchesDetail = await response.json()
-    console.log(teamMatchesDetail)
     const teamBanner = teamMatchesDetail.team_banner_url
     const latestMatchDetails = teamMatchesDetail.latest_match_details
     const recentMatches = teamMatchesDetail.recent_matches
@@ -55,7 +53,6 @@ class TeamMatches extends Component {
       recentMatches: updatedRecentMatches,
       isLoading: false,
     })
-    console.log(recentMatches)
   }
 
   render() {
@@ -63,7 +60,7 @@ class TeamMatches extends Component {
     return (
       <div className="team-matches-container">
         {isLoading ? (
-          <div className="loader" testid="loader">
+          <div className="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
           </div>
         ) : (

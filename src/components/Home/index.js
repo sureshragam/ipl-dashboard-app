@@ -22,8 +22,6 @@ class Home extends Component {
       teamImageUrl: eachTeam.team_image_url,
     }))
     this.setState({teamDetails: updatedTeamDetails, isLoading: false})
-    console.log(teamDetails)
-    console.log(updatedTeamDetails)
   }
 
   render() {
@@ -38,7 +36,7 @@ class Home extends Component {
           <h1 className="main-heading">IPL DASHBOARD</h1>
         </div>
         {isLoading ? (
-          <div className="loader" testid="loader">
+          <div className="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
           </div>
         ) : (
