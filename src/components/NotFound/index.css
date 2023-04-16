@@ -1,0 +1,15 @@
+/* Write your CSS here */
+.not-found {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found > h1 {
+  font-size: 70px;
+  color: white;
+  font-family: 'Bree-serif';
+}

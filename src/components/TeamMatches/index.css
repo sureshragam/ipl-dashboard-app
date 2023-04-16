@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.team-matches-container {
+  background-image: linear-gradient(to bottom, #a4261d, #1e293b);
+  padding: 30px;
+  color: white;
+  min-height: 100vh;
+}
+.banner-container {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.banner-container > img {
+  width: 100%;
+}
+ul {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

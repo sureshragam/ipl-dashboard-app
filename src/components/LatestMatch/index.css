@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.latest-match-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f172a;
+  padding: 15px;
+  border-radius: 8px;
+}
+.latest-match-container > .col-1 {
+  height: 100%;
+  text-align: left;
+}
+.latest-match-container > .col-2 > img {
+  width: 70%;
+}
+.latest-head {
+  font-size: 18px;
+  font-family: 'Bree Serif';
+}
+.latest-match-container > .col-3 {
+  text-align: right;
+}
